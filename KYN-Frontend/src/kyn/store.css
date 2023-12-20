@@ -1,0 +1,67 @@
+
+/* body{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSspmbNtk0QKCCszZVFXDUKHaXv2kYLvT65BGtzGE2x9iXpRaqR&usqp=CAU) no-repeat center center fixed;
+background-size: cover;
+} */
+
+body {
+	background: linear-gradient(-45deg,#8B008B,#483D8B,#DB7093,#6A5ACD,#800080);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.hero,.footer{
+   background-color: rgba(0,0,0,0);
+ 
+}
+
+
+
+.button .tooltiptext{
+  visibility: hidden;
+  width: 90px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.button.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.button:hover .tooltiptext{
+  visibility: visible;
+  opacity: 1;
+}
+
+.columns{
+    background-color: #fff;
+}
